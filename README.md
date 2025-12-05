@@ -7,13 +7,22 @@ My solutions for [Advent of Code 2025](https://adventofcode.com/2025) written in
 Each day's solutions are organized in separate directories:
 
 ```
-dayX/
-├── challenge1/
-│   ├── index.ts
-│   └── input.txt
-└── challenge2/
-    ├── index.ts
-    └── input.txt
+days/
+├── day1/
+│   ├── challenge1/
+│   │   ├── index.ts
+│   │   └── input.txt
+│   └── challenge2/
+│       ├── index.ts
+│       └── input.txt
+├── day2/
+│   ├── challenge1/
+│   │   ├── index.ts
+│   │   └── input.txt
+│   └── challenge2/
+│       ├── index.ts
+│       └── input.txt
+// ...
 ```
 
 ## Setup
@@ -26,10 +35,16 @@ pnpm install
 
 ## Running Solutions
 
-Using Node 24, simply run the file you want to execute with `node`:
+Using Node 24, simply run the file you want to execute with `pnpm`:
 
 ```bash
-node dayX/challengeY/index.ts
+pnpm solve <day> <challenge>
+```
+
+so for example when running day 3, challenge 2:
+
+```bash
+pnpm solve 3 2
 ```
 
 ## Requirements
